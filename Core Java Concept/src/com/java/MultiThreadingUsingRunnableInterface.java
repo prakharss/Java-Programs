@@ -33,6 +33,9 @@ class MultiThreadingUsingRunnableInterface
 			Thread object = new Thread(new MultithreadingDemo()); 
 			object.start(); 
 		} 
+		
+		MultithreadingDemo mtd=new MultithreadingDemo();
+		//mtd.start();
 	} 
 } 
 

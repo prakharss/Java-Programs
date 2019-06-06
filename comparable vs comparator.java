@@ -45,6 +45,7 @@ public class Solution {
 			System.out.println(ls.get(i).str+" "+ls.get(i).marks);
 		System.out.println();
 		
+		//this is an anonymous class (we can understand the use of anonymous class)
 		Comparator<Util> comp=new Comparator<Util>() {
 			@Override
 			public int compare(Util o1, Util o2) {
