@@ -33,6 +33,8 @@ class Trie {
 		root.ls.add(index);
 	}
 	
+	vector<char> vec;
+
 	static void traverse(Trie root,Set<Set<String> > res,String arr[])
 	{
 		if(root.end)
@@ -49,7 +51,11 @@ class Trie {
 		for(int i=0;i<26;i++)
 		{
 			if(root.next[i]!=null)
+			{
+				vec.push_back((char)i);
 				traverse(root.next[i],res,arr);
+				vec.pop
+			}
 		}
 	}
 }

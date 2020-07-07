@@ -6,16 +6,18 @@ public class Solution {
 		Scanner sc=new Scanner(System.in);
 		//type casting
 		/*
-		 *automatic conversion - char ---> int--->long 
+		 *automatic conversion - char ---> int--->float 
 		 *                                   | \/ |
 		 *                                   | /\ |
 		 *                                   |/  \|
-		 *                                float--->double
+		 *                                 long--->double
 		 *                                
-		 *                                float--->long
+		 								  int--->float
+		 								  int--->long
+		 *                                float--->double
 		 *                                int--->double
-		 *                                int--->float
-		 *                                long--->double
+		 *                                long--->float
+		 								  long--->double
 		 */
 
 		//float ff=4.5d; - Error: can not convert double to float automatically
