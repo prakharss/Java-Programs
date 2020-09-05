@@ -3,7 +3,7 @@ Kth Smallest Element in a Sorted Matrix
 Problem Description
 Given a sorted matrix of integers A of size N x M and an integer B. Each of the rows and 
 columns of matrix A are sorted in ascending order, find the Bth smallest element in the
-matrix. NOTE: Return The Bth smallest element in the sorted order, not the Bth distinct element.  
+matrix. NOTE: Return The Bth smallest elementTs in the sorted order, not the Bth distinct element.  
 
 Problem Constraints
 1 <= N, M <= 500 1 <= A[i] <= 109 1 <= B <= N * M  

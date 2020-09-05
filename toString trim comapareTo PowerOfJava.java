@@ -1,3 +1,20 @@
+/*
+Sorting students on the basis of marks (name, roll, marks)
+
+Input
+4
+Prakhar 2 90
+Himanshu 1 95
+Kirti 4 92
+Krishna 3 88
+ 
+Output 
+1 Himanshu 95
+4 Kirti 92
+2 Prakhar 90
+3 Krishna 88 
+*/
+
 import java.util.*;
 
 class Student implements Comparable<Student>
@@ -42,7 +59,7 @@ public class Solution
 		sc.nextLine();
 		for(i=0;i<n;i++)
 		{
-			temp=sc.nextLine().split(",");
+			temp=sc.nextLine().split("\\s+");
 			student=new Student();
 			
 			student.name=temp[0];
@@ -51,7 +68,6 @@ public class Solution
 			student.marks=Integer.parseInt(temp[2].trim());
 			
 			studentList.add(student);
-			
 		}
 		
 		Collections.sort(studentList);
@@ -63,19 +79,3 @@ public class Solution
 	}
 } 
 
-/*
-Sort on the basis of marks (name, roll, marks)
-
-Input
-4
-Prakhar, 2, 90
-Himanshu, 1, 95
-Kirti, 4, 92
-Krishna, 3, 88
- 
-Output 
-1 Himanshu 95
-4 Kirti 92
-2 Prakhar 90
-3 Krishna 88 
-*/
